@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/medicine_shop/static/css/main.7acaea2f.css",
-    "main.js": "/medicine_shop/static/js/main.07d3183d.js",
+    "main.css": "/medicine_shop/static/css/main.13d317b2.css",
+    "main.js": "/medicine_shop/static/js/main.368274fd.js",
     "index.html": "/medicine_shop/index.html",
-    "main.7acaea2f.css.map": "/medicine_shop/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/medicine_shop/static/js/main.07d3183d.js.map"
+    "static/media/sprite.svg": "/medicine_shop/static/media/sprite.4c7c55d2c43f7ffeef33f7844863497d.svg",
+    "main.13d317b2.css.map": "/medicine_shop/static/css/main.13d317b2.css.map",
+    "main.368274fd.js.map": "/medicine_shop/static/js/main.368274fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.13d317b2.css",
+    "static/js/main.368274fd.js"
   ]
 }
