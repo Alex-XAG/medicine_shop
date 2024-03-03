@@ -30,14 +30,3 @@ export const ShopList = styled.ul`
   align-items: center;
   gap: 20px;
 `;
-
-export const ShopListArticle = styled.article`
-  position: relative;
-`;
-
-export const SvgHeart = styled.svg`
-  stroke: rgba(0, 0, 255);
-  position: absolute;
-  top: 10px;
-  right: 10px;
-`;
