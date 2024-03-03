@@ -1,7 +1,6 @@
 import SharedLayOut from 'components/SharedLayOut/SharedLayOut';
 import ShopPage from 'pages/ShopPage/ShopPage';
 import ShoppingCartPage from 'pages/ShoppingCartPage/ShoppingCartPage';
-import { useEffect } from 'react';
 import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
@@ -59,12 +58,9 @@ const products = [
 
 export const App = () => {
   const [orders, setOrders] = useState([]);
-  const [favorites, setFavorites] = useState([]);
-
-  useEffect(() => {
-    const favoritesLS = JSON.parse(localStorage.getItem('favorites')) || [];
-    setFavorites(favoritesLS);
-  }, []);
+  const [favorites, setFavorites] = useState(
+    JSON.parse(localStorage.getItem('favorites')) || []
+  );
 
   const handleAddToOrder = (product, id) => {
     const isProductInOrder = orders.find(product => product.id === id);

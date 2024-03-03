@@ -9,6 +9,22 @@ const ShopPage = ({
   setFavorites,
   favorites,
 }) => {
+  //   const favoritesId = favorites.map(fav => fav.id);
+  //   console.log(favoritesId);
+  //   const favoritesProducts = products.filter(prod => {
+  //     return favorites.map(element => prod.id === element.id);
+  //   });
+  //   console.log(favoritesProducts);
+
+  //   const otherProducts = products.filter(
+  //     (prod, i) => prod.id !== favorites[0].id
+  //   );
+  //   console.log(otherProducts);
+
+  //   const sortedProducts = [...favoritesProducts, ...otherProducts];
+
+  //   console.log(sortedProducts);
+
   return (
     <div>
       <h1>Shop Page</h1>
