@@ -32,7 +32,8 @@ const ShopPage = ({ handleAddToOrder, setFavorites, favorites }) => {
   }, []);
 
   useEffect(() => {
-    handleFilter('911');
+    const filteredProducts = products.filter(prod => prod.shop === '911');
+    setProductsSelected(filteredProducts);
   }, [products]);
 
   const shops = products
