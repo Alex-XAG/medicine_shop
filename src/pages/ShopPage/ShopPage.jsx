@@ -8,11 +8,14 @@ import {
 import { ShopListItem } from 'components/ShopListItem/ShopListItem';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import initialProducts from '../../medicines.json';
 import axios from 'axios';
 
 const ShopPage = ({ handleAddToOrder, setFavorites, favorites }) => {
   const [products, setProducts] = useState([]);
-  const [productsSelected, setProductsSelected] = useState([...products]);
+  const [productsSelected, setProductsSelected] = useState([
+    ...initialProducts,
+  ]);
 
   useEffect(() => {
     const getProducts = async () => {
