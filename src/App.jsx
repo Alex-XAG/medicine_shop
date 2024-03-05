@@ -1,66 +1,48 @@
 import SharedLayOut from 'components/SharedLayOut/SharedLayOut';
+import FavoritePage from 'pages/FavoritePage/FavoritePage';
 import ShopPage from 'pages/ShopPage/ShopPage';
 import ShoppingCartPage from 'pages/ShoppingCartPage/ShoppingCartPage';
 import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
-
-const shops = [
-  { id: '1', name: '911' },
-  { id: '2', name: 'Social pharmacy' },
-  { id: '3', name: 'Pharmacy 3' },
-  { id: '4', name: 'Pharmacy 4' },
-];
-
-const products = [
-  {
-    id: 1,
-    name: 'analgin',
-    price: 10,
-    description: 'iwsadfhskdjnbkxffnvbszldv',
-  },
-  {
-    id: 2,
-    name: 'analgin',
-    price: 10,
-    description: 'iwsadfhskdjnbkxffnvbszldv',
-  },
-  {
-    id: 3,
-    name: 'analgin',
-    price: 10,
-    description: 'iwsadfhskdjnbkxffnvbszldv',
-  },
-  {
-    id: 4,
-    name: 'analgin',
-    price: 10,
-    description: 'iwsadfhskdjnbkxffnvbszldv',
-  },
-  {
-    id: 5,
-    name: 'analgin',
-    price: 10,
-    description: 'iwsadfhskdjnbkxffnvbszldv',
-  },
-  {
-    id: 6,
-    name: 'analgin',
-    price: 10,
-    description: 'iwsadfhskdjnbkxffnvbszldv',
-  },
-  {
-    id: 7,
-    name: 'analgin',
-    price: 10,
-    description: 'iwsadfhskdjnbkxffnvbszldv',
-  },
-];
+import { nanoid } from 'nanoid';
+import HistoryPage from 'pages/HistoryPage/HistoryPage';
+import { useEffect } from 'react';
 
 export const App = () => {
-  const [orders, setOrders] = useState([]);
+  const [orders, setOrders] = useState(
+    JSON.parse(localStorage.getItem('orders')) || []
+  );
   const [favorites, setFavorites] = useState(
     JSON.parse(localStorage.getItem('favorites')) || []
   );
+  const [orderHistory, setOrderHistory] = useState(
+    JSON.parse(localStorage.getItem('orderHistory')) || []
+  );
+
+  useEffect(() => {
+    localStorage.setItem('orderHistory', JSON.stringify(orderHistory));
+  }, [orderHistory]);
+
+  const onSubmit = (inputName, inputPhone, inputEmail, inputAddress) => {
+    setOrderHistory(prevOrder => [
+      ...prevOrder,
+      createOrder({
+        name: inputName,
+        phone: inputPhone,
+        email: inputEmail,
+        address: inputAddress,
+        order: [...orders],
+      }),
+    ]);
+  };
+
+  const createOrder = data => {
+    const newOrder = {
+      ...data,
+      id: nanoid(),
+    };
+    return newOrder;
+  };
 
   const handleAddToOrder = (product, id) => {
     const isProductInOrder = orders.find(product => product.id === id);
@@ -87,8 +69,6 @@ export const App = () => {
           element={
             <ShopPage
               handleAddToOrder={handleAddToOrder}
-              products={products}
-              shops={shops}
               favorites={favorites}
               setFavorites={setFavorites}
             />
@@ -96,9 +76,28 @@ export const App = () => {
         />
         <Route
           path="/shopping-cart"
-          element={<ShoppingCartPage orders={orders} setOrders={setOrders} />}
+          element={
+            <ShoppingCartPage
+              orders={orders}
+              setOrders={setOrders}
+              onSubmit={onSubmit}
+            />
+          }
         />
-        <Route path="/favorites" element={<h2>Favorites</h2>} />
+        <Route
+          path="/favorites"
+          element={
+            <FavoritePage
+              favorites={favorites}
+              handleAddToOrder={handleAddToOrder}
+              setFavorites={setFavorites}
+            />
+          }
+        />
+        <Route
+          path="/history"
+          element={<HistoryPage orderHistory={orderHistory} />}
+        />
         <Route path="*" element={<ShopPage />} />
       </Route>
     </Routes>

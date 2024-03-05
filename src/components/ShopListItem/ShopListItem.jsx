@@ -1,5 +1,12 @@
 import { useState, useEffect } from 'react';
-import { ShopListArticle, SvgHeart } from './ShopListItem.styled';
+import {
+  AddToShoppingCart,
+  Description,
+  Price,
+  ProductItem,
+  ShopListArticle,
+  SvgHeart,
+} from './ShopListItem.styled';
 import sprite from '../../sprite.svg';
 
 export const ShopListItem = ({
@@ -28,29 +35,32 @@ export const ShopListItem = ({
 
     setIsFavorite(!isFavorite);
   };
-
+  const { name, id, price, description, shop } = product;
   return (
-    <li>
+    <ProductItem>
       <ShopListArticle>
+        <h3>{name.toUpperCase()}</h3>
+        {/* <ImgBox> */}
+        <h3>{shop}</h3>
         <SvgHeart
           width={20}
           height={20}
           style={isProductInFavorites ? { fill: 'blue' } : { fill: 'none' }}
-          onClick={() => toggleFavorite(product.id)}
+          onClick={() => toggleFavorite(id)}
         >
           <use href={`${sprite}#icon-heart`}></use>
         </SvgHeart>
-        <h3>{product.name}</h3>
-        <img href="/" alt="Medicine" width={200} height={100} />
-        <p>{product.price}$</p>
-        <p>{product.description}</p>
-        <button
+        {/* </ImgBox> */}
+
+        <Price>Price: {price}$</Price>
+        <Description>Description: {description}</Description>
+        <AddToShoppingCart
           type="button"
-          onClick={() => handleAddToOrder(product, product.id)}
+          onClick={() => handleAddToOrder(product, id)}
         >
           Add to shopping cart
-        </button>
+        </AddToShoppingCart>
       </ShopListArticle>
-    </li>
+    </ProductItem>
   );
 };

@@ -1,34 +1,9 @@
-import { useState } from 'react';
-import { OrderForm } from './OrderForm/OrderForm';
-import { nanoid } from 'nanoid';
+import { OrderForm } from '../../components/OrderForm/OrderForm';
 
-const ShoppingCartPage = ({ orders, setOrders }) => {
-  const [order, setOrder] = useState([]);
-
-  const onSubmit = (inputName, inputPhone, inputEmail, inputAddress) => {
-    setOrder(prevOrder => [
-      ...prevOrder,
-      createOrder({
-        name: inputName,
-        phone: inputPhone,
-        email: inputEmail,
-        address: inputAddress,
-        order: [...orders],
-      }),
-    ]);
-  };
-
-  const createOrder = data => {
-    const newOrder = {
-      ...data,
-      id: nanoid(),
-    };
-    return newOrder;
-  };
-
+const ShoppingCartPage = ({ orders, setOrders, onSubmit, orderHistory }) => {
   return (
     <div>
-      <OrderForm onSubmit={onSubmit} order={order} />
+      <OrderForm onSubmit={onSubmit} orders={orders} setOrders={setOrders} />
     </div>
   );
 };

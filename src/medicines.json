@@ -1,0 +1,461 @@
+[
+  {
+    "id": "4009",
+    "description": "PARACETAMOL SYRUP 120MG/5ML",
+    "name": "PANADOL SYRUP",
+    "measurementUnit": "None",
+    "price": 3,
+    "shop": "911",
+    "form": "Syrup"
+  },
+  {
+    "id": "104",
+    "description": "ADAPALENE GEL 0.1%",
+    "name": "ADAFERIN GEL",
+    "measurementUnit": "None",
+    "price": 5,
+    "shop": "Social pharmacy",
+    "form": "Application"
+  },
+  {
+    "id": "105",
+    "description": "ADAPALENE GEL 0.1%",
+    "name": "ACNEPALE",
+    "measurementUnit": "None",
+    "price": 4,
+    "shop": "Pharmacy 3",
+    "form": "Application"
+  },
+  {
+    "id": "106",
+    "description": "ADAPALENE GEL 0.1%",
+    "name": "OPALEN",
+    "measurementUnit": "None",
+    "price": 7,
+    "shop": "Pharmacy 4",
+    "form": "Application"
+  },
+  {
+    "id": "107",
+    "description": "ADAPALENE GEL 0.1%",
+    "name": "ADAPCO GEL",
+    "measurementUnit": "None",
+    "price": 2,
+    "shop": "911",
+    "form": "Application"
+  },
+  {
+    "id": "108",
+    "description": "ADAPALENE GEL 0.1%",
+    "name": "ACLENE",
+    "measurementUnit": "None",
+    "price": 3,
+    "shop": "Social pharmacy",
+    "form": "Application"
+  },
+  {
+    "id": "109",
+    "description": "ADAPALENE GEL 0.1%",
+    "name": "OPALEN",
+    "measurementUnit": "None",
+    "price": 9,
+    "shop": "Pharmacy 3",
+    "form": "Application"
+  },
+  {
+    "id": "110",
+    "description": "ADAPALENE GEL 0.1%",
+    "name": "ZYLENE NANOGEL",
+    "measurementUnit": "None",
+    "price": 6,
+    "shop": "Pharmacy 4",
+    "form": "Application"
+  },
+  {
+    "id": "158",
+    "description": "ALFACALCIDOL 0.25MCG",
+    "name": "ONE ALPHA",
+    "measurementUnit": "None",
+    "price": 8,
+    "shop": "911",
+    "form": "Capsule"
+  },
+  {
+    "id": "270",
+    "description": "AMLODIPINE 10MG",
+    "name": "HOVASC",
+    "measurementUnit": "None",
+    "price": 5,
+    "shop": "Social pharmacy",
+    "form": "Tablet"
+  },
+  {
+    "id": "523",
+    "description": "ATENOLOL 25MG BP",
+    "name": "ATENEX 25",
+    "measurementUnit": "None",
+    "price": 6,
+    "shop": "911",
+    "form": "Tablet"
+  },
+  {
+    "id": "524",
+    "description": "ATENOLOL 25MG BP",
+    "name": "ATENEX 25",
+    "measurementUnit": "None",
+    "price": 8,
+    "shop": "Pharmacy 4",
+    "form": "Tablet"
+  },
+  {
+    "id": "846",
+    "description": "BENZHEXOL TAB BP 2MG",
+    "name": "",
+    "measurementUnit": "None",
+    "price": 15,
+    "shop": "Pharmacy 4",
+    "form": "Application"
+  },
+  {
+    "id": "855",
+    "description": "BENZOYL PEROXIDE 4%",
+    "name": "BREVOXYL",
+    "measurementUnit": "None",
+    "price": 12,
+    "shop": "Social pharmacy",
+    "form": "Tablet"
+  },
+  {
+    "id": "856",
+    "description": "BENZOYL PEROXIDE 5%",
+    "name": "PERSOL AC 5 GEL",
+    "measurementUnit": "None",
+    "price": 7,
+    "shop": "Pharmacy 3",
+    "form": "Application"
+  },
+  {
+    "id": "1044",
+    "description": "BROMAZEPAM 1.5MG",
+    "name": "LEXOTANIL",
+    "measurementUnit": "None",
+    "price": 5,
+    "shop": "911",
+    "form": "Tablet"
+  },
+  {
+    "id": "1069",
+    "description": "BUDESONIDE IP 200MCG",
+    "name": "DERIN\"ID\"E",
+    "measurementUnit": "None",
+    "price": 4,
+    "shop": "911",
+    "form": "Inhaler"
+  },
+  {
+    "id": "1188",
+    "description": "CAPECITABINE 500MG",
+    "name": "XELODA",
+    "measurementUnit": "None",
+    "price": 10,
+    "shop": "Social pharmacy",
+    "form": "Tablet"
+  },
+  {
+    "id": "1210",
+    "description": "CARBAMAZEPINE 200MG",
+    "name": "TEGRETOL 200",
+    "measurementUnit": "None",
+    "price": 9,
+    "shop": "Pharmacy 4",
+    "form": "Tablet"
+  },
+  {
+    "id": "1572",
+    "description": "CEPHALEXIN 250MG BP",
+    "name": "",
+    "measurementUnit": "None",
+    "price": 13,
+    "shop": "Pharmacy 3",
+    "form": "Tablet"
+  },
+  {
+    "id": "1574",
+    "description": "CEPHALEXIN BP 500MG",
+    "name": "SPOR\"ID\"EX",
+    "measurementUnit": "None",
+    "price": 10,
+    "shop": "Pharmacy 4",
+    "form": "Tablet"
+  },
+  {
+    "id": "1575",
+    "description": "CEPHALEXIN BP 500MG",
+    "name": "OSPEXIN 500MG BP",
+    "measurementUnit": "None",
+    "price": 12,
+    "shop": "911",
+    "form": "Tablet"
+  },
+  {
+    "id": "1604",
+    "description": "CETIRIZINE 10MG",
+    "name": "CETRIZ",
+    "measurementUnit": "None",
+    "price": 13,
+    "shop": "Social pharmacy",
+    "form": "Tablet"
+  },
+  {
+    "id": "2013",
+    "description": "CLONAZEPAM USP 2MG",
+    "name": "",
+    "measurementUnit": "None",
+    "price": 3,
+    "shop": "Pharmacy 3",
+    "form": "Tablet"
+  },
+  {
+    "id": "2320",
+    "description": "DESONIDE CREAM 0.05%",
+    "name": "DESOWEN",
+    "measurementUnit": "None",
+    "price": 8,
+    "shop": "Pharmacy 4",
+    "form": "Application"
+  },
+  {
+    "id": "2375",
+    "description": "DIAZEPAM 2MG B.P",
+    "name": "",
+    "measurementUnit": "None",
+    "price": 4,
+    "shop": "911",
+    "form": "Tablet"
+  },
+  {
+    "id": "2395",
+    "description": "DICLOFENAC 1% GEL",
+    "name": "DICLOFENAC GEL",
+    "measurementUnit": "None",
+    "price": 5,
+    "shop": "Social pharmacy",
+    "form": "Application"
+  },
+  {
+    "id": "2396",
+    "description": "DICLOFENAC 1% GEL",
+    "name": "SYNAC GEL",
+    "measurementUnit": "None",
+    "price": 8,
+    "shop": "911",
+    "form": "Application"
+  },
+  {
+    "id": "2412",
+    "description": "DICLOFENAC GEL BP 1%",
+    "name": "SUBSYDE GEL",
+    "measurementUnit": "None",
+    "price": 12,
+    "shop": "Pharmacy 3",
+    "form": "Application"
+  },
+  {
+    "id": "2413",
+    "description": "DICLOFENAC GEL BP 1%",
+    "name": "ARNIL",
+    "measurementUnit": "None",
+    "price": 15,
+    "shop": "911",
+    "form": "Application"
+  },
+  {
+    "id": "2414",
+    "description": "DICLOFENAC GEL BP 1%",
+    "name": "POWERGESIC GEL",
+    "measurementUnit": "None",
+    "price": 11,
+    "shop": "Pharmacy 4",
+    "form": "Application"
+  },
+  {
+    "id": "2415",
+    "description": "DICLOFENAC GEL BP 1%",
+    "name": "DICLOKARE GEL",
+    "measurementUnit": "None",
+    "price": 11,
+    "shop": "Social pharmacy",
+    "form": "Application"
+  },
+  {
+    "id": "2433",
+    "description": "DICLOFENAC SODIUM 1%",
+    "name": "UNIREN SPRAY",
+    "measurementUnit": "None",
+    "price": 10,
+    "shop": "Pharmacy 4",
+    "form": "Application"
+  },
+  {
+    "id": "2610",
+    "description": "DOMPERIDONE 5MG/5ML ",
+    "name": "VAVE",
+    "measurementUnit": "None",
+    "price": 6,
+    "shop": "911",
+    "form": "Injectible"
+  },
+  {
+    "id": "2611",
+    "description": "DOMPERIDONE 5MG/5ML ",
+    "name": "DOMETIC",
+    "measurementUnit": "None",
+    "price": 7,
+    "shop": "911",
+    "form": "Injectible"
+  },
+  {
+    "id": "2785",
+    "description": "DYDROGESTERONE 10MG ",
+    "name": "DUPHASTON",
+    "measurementUnit": "None",
+    "price": 3,
+    "shop": "Social pharmacy",
+    "form": "Tablet"
+  },
+  {
+    "id": "3243",
+    "description": "FLUCONAZOLE 100MG",
+    "name": "FLUCOZAL",
+    "measurementUnit": "None",
+    "price": 8,
+    "shop": "911",
+    "form": "Tablet"
+  },
+  {
+    "id": "3244",
+    "description": "FLUCONAZOLE 150MG",
+    "name": "ONECAN",
+    "measurementUnit": "None",
+    "price": 19,
+    "shop": "Pharmacy 3",
+    "form": "Tablet"
+  },
+  {
+    "id": "3245",
+    "description": "FLUCONAZOLE 150MG",
+    "name": "NUFORCE 150",
+    "measurementUnit": "None",
+    "price": 8,
+    "shop": "Social pharmacy",
+    "form": "Tablet"
+  },
+  {
+    "id": "3277",
+    "description": "FLUNARIZINE HCL 5MG",
+    "name": "FLUDAN",
+    "measurementUnit": "None",
+    "price": 7,
+    "shop": "911",
+    "form": "Tablet"
+  },
+  {
+    "id": "3619",
+    "description": "GLIMEPIRIDE TAB 1MG",
+    "name": "GMINE 1",
+    "measurementUnit": "None",
+    "price": 5,
+    "shop": "911",
+    "form": "Tablet"
+  },
+  {
+    "id": "3620",
+    "description": "GLIMEPIRIDE TAB 1MG",
+    "name": "GLIMITAB 1MG",
+    "measurementUnit": "None",
+    "price": 13,
+    "shop": "Pharmacy 3",
+    "form": "Tablet"
+  },
+  {
+    "id": "3621",
+    "description": "GLIMEPIRIDE TAB 1MG",
+    "name": "INSUGLIM 1",
+    "measurementUnit": "None",
+    "price": 17,
+    "shop": "Social pharmacy",
+    "form": "Tablet"
+  },
+  {
+    "id": "3622",
+    "description": "GLIMEPIRIDE TAB 1MG",
+    "name": "GLIMED 1",
+    "measurementUnit": "None",
+    "price": 15,
+    "shop": "911",
+    "form": "Tablet"
+  },
+  {
+    "id": "3819",
+    "description": "HYDROCORTISONE 1% BP",
+    "name": "UNICORT CREAM",
+    "measurementUnit": "None",
+    "price": 4,
+    "shop": "911",
+    "form": "Injectible"
+  },
+  {
+    "id": "4006",
+    "description": "BUSCOPAN VIAL",
+    "name": "",
+    "measurementUnit": "None",
+    "price": 8,
+    "shop": "Social pharmacy",
+    "form": "Suppository"
+  },
+  {
+    "id": "4007",
+    "description": "BUSCOPAN SUPPO 10MG",
+    "name": "",
+    "measurementUnit": "None",
+    "price": 5,
+    "shop": "911",
+    "form": "Tablet"
+  },
+  {
+    "id": "4008",
+    "description": "BUSCOPAN TAB 10MG",
+    "name": "",
+    "measurementUnit": "None",
+    "price": 3,
+    "shop": "Pharmacy 3",
+    "form": "Tablet"
+  },
+  {
+    "id": "4010",
+    "description": "PARACETAMOL 500MG",
+    "name": "PANADOL 500 MG",
+    "measurementUnit": "None",
+    "price": 4,
+    "shop": "911",
+    "form": "Tablet"
+  },
+  {
+    "id": "4011",
+    "description": "BUSCOPAN 100MG",
+    "name": "BUSCOPAN 100",
+    "measurementUnit": "None",
+    "price": 8,
+    "shop": "Pharmacy 3",
+    "form": "Tablet"
+  },
+  {
+    "id": "4012",
+    "description": "NEULINE 250MG",
+    "name": "NEULINE 250",
+    "measurementUnit": "None",
+    "price": 9,
+    "shop": "Social pharmacy",
+    "form": "Tablet"
+  }
+]

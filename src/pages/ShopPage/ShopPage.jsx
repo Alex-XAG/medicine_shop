@@ -1,41 +1,50 @@
-import { ListsBox, ProductList, ShopList } from './ShopPage.styled';
+import {
+  ListsBox,
+  ProductList,
+  ShopItem,
+  ShopList,
+  ShopPageBox,
+} from './ShopPage.styled';
 
 import { ShopListItem } from 'components/ShopListItem/ShopListItem';
+import products from '../../medicines.json';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
-const ShopPage = ({
-  handleAddToOrder,
-  products,
-  shops,
-  setFavorites,
-  favorites,
-}) => {
-  //   const favoritesId = favorites.map(fav => fav.id);
-  //   console.log(favoritesId);
-  //   const favoritesProducts = products.filter(prod => {
-  //     return favorites.map(element => prod.id === element.id);
-  //   });
-  //   console.log(favoritesProducts);
+const ShopPage = ({ handleAddToOrder, setFavorites, favorites }) => {
+  const [productsSelected, setProductsSelected] = useState([...products]);
+  useEffect(() => {
+    handleFilter('911');
+  }, []);
+  const shops = products
+    .map(prod => prod.shop)
+    .filter((prod, i, arr) => arr.indexOf(prod) === i);
 
-  //   const otherProducts = products.filter(
-  //     (prod, i) => prod.id !== favorites[0].id
-  //   );
-  //   console.log(otherProducts);
+  function handleFilter(shop) {
+    const filteredProducts = products.filter(prod => prod.shop === shop);
+    setProductsSelected(filteredProducts);
+  }
 
-  //   const sortedProducts = [...favoritesProducts, ...otherProducts];
-
-  //   console.log(sortedProducts);
-
+  // const filteredProducts = handleFilter();
   return (
-    <div>
+    <ShopPageBox>
       <h1>Shop Page</h1>
       <ListsBox>
         <ShopList>
           {shops.map(shop => (
-            <li key={shop.id}>{shop.name}</li>
+            <ShopItem
+              key={shop}
+              onClick={() => {
+                console.log(handleFilter(shop));
+                return handleFilter(shop);
+              }}
+            >
+              {shop}
+            </ShopItem>
           ))}
         </ShopList>
         <ProductList>
-          {products.map(product => (
+          {productsSelected.map(product => (
             <ShopListItem
               key={product.id}
               product={product}
@@ -47,7 +56,7 @@ const ShopPage = ({
           ))}
         </ProductList>
       </ListsBox>
-    </div>
+    </ShopPageBox>
   );
 };
 

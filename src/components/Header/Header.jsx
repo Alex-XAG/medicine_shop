@@ -13,6 +13,7 @@ export const Header = () => {
         <HeaderNavLink to="/">Shop page</HeaderNavLink>
         <HeaderNavLink to="/shopping-cart">Shopping cart</HeaderNavLink>
         <HeaderNavLink to="/favorites">Favorites</HeaderNavLink>
+        <HeaderNavLink to="/history">History</HeaderNavLink>
       </HeaderNav>
     </HeaderBox>
   );
