@@ -12,10 +12,8 @@ import initialProducts from '../../medicines.json';
 import axios from 'axios';
 
 const ShopPage = ({ handleAddToOrder, setFavorites, favorites }) => {
-  const [products, setProducts] = useState([]);
-  const [productsSelected, setProductsSelected] = useState([
-    ...initialProducts,
-  ]);
+  const [products, setProducts] = useState([...initialProducts]);
+  const [productsSelected, setProductsSelected] = useState([...products]);
 
   useEffect(() => {
     const getProducts = async () => {
