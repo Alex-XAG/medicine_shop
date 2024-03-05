@@ -172,7 +172,7 @@ export const OrderForm = ({ onSubmit, orders, setOrders }) => {
           </OrderList>
         </ShoppingCartorderBox>
         <OrderSubmitBox>
-          <OrderTotalPrice>Total price: {countTotalPrice}</OrderTotalPrice>
+          <OrderTotalPrice>Total price: {countTotalPrice}$ </OrderTotalPrice>
           <OrderSubmitBtn type="submit">Send order</OrderSubmitBtn>
         </OrderSubmitBox>
       </ShoppingCartForm>

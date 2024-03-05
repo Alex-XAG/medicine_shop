@@ -7,15 +7,34 @@ import {
 } from './ShopPage.styled';
 
 import { ShopListItem } from 'components/ShopListItem/ShopListItem';
-import products from '../../medicines.json';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import axios from 'axios';
 
 const ShopPage = ({ handleAddToOrder, setFavorites, favorites }) => {
+  const [products, setProducts] = useState([]);
   const [productsSelected, setProductsSelected] = useState([...products]);
+
+  useEffect(() => {
+    const getProducts = async () => {
+      try {
+        await axios
+          .get('https://medicines-reader-backend.onrender.com/medicines')
+          .then(res => {
+            setProducts(res.data);
+            return res.data;
+          });
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getProducts();
+  }, []);
+
   useEffect(() => {
     handleFilter('911');
-  }, []);
+  }, [products]);
+
   const shops = products
     .map(prod => prod.shop)
     .filter((prod, i, arr) => arr.indexOf(prod) === i);
@@ -25,7 +44,6 @@ const ShopPage = ({ handleAddToOrder, setFavorites, favorites }) => {
     setProductsSelected(filteredProducts);
   }
 
-  // const filteredProducts = handleFilter();
   return (
     <ShopPageBox>
       <h1>Shop Page</h1>

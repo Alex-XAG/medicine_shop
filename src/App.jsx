@@ -18,7 +18,6 @@ export const App = () => {
   const [orderHistory, setOrderHistory] = useState(
     JSON.parse(localStorage.getItem('orderHistory')) || []
   );
-
   useEffect(() => {
     localStorage.setItem('orderHistory', JSON.stringify(orderHistory));
   }, [orderHistory]);
