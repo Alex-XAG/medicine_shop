@@ -5,7 +5,6 @@ import {
   ShopList,
   ShopPageBox,
 } from './ShopPage.styled';
-
 import { ShopListItem } from 'components/ShopListItem/ShopListItem';
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -54,7 +53,6 @@ const ShopPage = ({ handleAddToOrder, setFavorites, favorites }) => {
             <ShopItem
               key={shop}
               onClick={() => {
-                console.log(handleFilter(shop));
                 return handleFilter(shop);
               }}
             >
